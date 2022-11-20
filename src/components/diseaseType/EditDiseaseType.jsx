@@ -15,7 +15,7 @@ function EditDiseaseType(props){
   useEffect(() => {
       // Using fetch to fetch the api from 
       // flask server it will be redirected to proxy
-      fetch("/diseaseType/get/"+id).then((res) =>
+      fetch("https://assignment2-db.herokuapp.com/diseaseType/get/"+id).then((res) =>
           res.json().then((data) => {
               // Setting a data from api
               setData(data)
