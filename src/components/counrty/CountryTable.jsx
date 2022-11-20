@@ -36,14 +36,14 @@ function CountryTable(){
    }
 
    function handleEdit(id){
-    navigate("/country/editCountry", {      state: {
+    navigate("https://assignment2-db.herokuapp.com/country/editCountry", {      state: {
         userId: id,
       }})
    }
    function handleDelete(id){
 
     console.log(id);
-    fetch('/country/delete/'+id, {
+    fetch('https://assignment2-db.herokuapp.com/country/delete/'+id, {
         method: 'DELETE',
         header: {
            'Accept' : 'application/json',

@@ -23,7 +23,7 @@ function AddCountry(){
         body: JSON.stringify(data)
     }
 
-    fetch('/country/add', requestOptions)
+    fetch('https://assignment2-db.herokuapp.com/country/add', requestOptions)
         .then(res => res.text())
         .then(text => console.log(text))
         .then(data =>{

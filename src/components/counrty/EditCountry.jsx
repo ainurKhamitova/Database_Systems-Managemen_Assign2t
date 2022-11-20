@@ -15,7 +15,7 @@ function EditCountry(props){
   useEffect(() => {
       // Using fetch to fetch the api from 
       // flask server it will be redirected to proxy
-      fetch("/country/get/"+id).then((res) =>
+      fetch("https://assignment2-db.herokuapp.com/country/get/"+id).then((res) =>
           res.json().then((data) => {
               // Setting a data from api
               setData(data)
@@ -37,7 +37,7 @@ function EditCountry(props){
       body: JSON.stringify(data)
   }
 
-  fetch('/country/update/'+id, requestOptions)
+  fetch('https://assignment2-db.herokuapp.com/country/update/'+id, requestOptions)
       .then(res => res.text())
       .then(text => console.log(text))
       .then(data =>{
