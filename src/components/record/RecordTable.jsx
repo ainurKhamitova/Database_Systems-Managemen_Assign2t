@@ -39,7 +39,7 @@ function RecordTable(){
    }
 
    function handleEdit(id){
-    navigate("https://assignment2-db.herokuapp.com/record/editRecord", {      state: {
+    navigate("/record/editRecord", {      state: {
         userId: id,
       }})
    }

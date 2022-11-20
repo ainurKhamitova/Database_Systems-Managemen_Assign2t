@@ -36,7 +36,7 @@ function CountryTable(){
    }
 
    function handleEdit(id){
-    navigate("https://assignment2-db.herokuapp.com/country/editCountry", {      state: {
+    navigate("/country/editCountry", {      state: {
         userId: id,
       }})
    }

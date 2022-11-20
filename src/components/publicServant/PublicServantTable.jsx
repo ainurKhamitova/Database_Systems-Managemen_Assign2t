@@ -36,7 +36,7 @@ function PublicServantTable(){
    }
 
    function handleEdit(id){
-    navigate("https://assignment2-db.herokuapp.com/publicServant/editPublicServant", {      state: {
+    navigate("/publicServant/editPublicServant", {      state: {
         userId: id,
       }})
    }

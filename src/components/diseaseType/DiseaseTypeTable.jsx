@@ -36,7 +36,7 @@ function DiseaseTypeTable(){
    }
 
    function handleEdit(id){
-    navigate("https://assignment2-db.herokuapp.com/diseaseType/editDiseaseType", {      state: {
+    navigate("/diseaseType/editDiseaseType", {      state: {
         userId: id,
       }})
    }

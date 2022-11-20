@@ -37,7 +37,7 @@ function DiscoverTable(){
    }
 
    function handleEdit(id){
-    navigate("https://assignment2-db.herokuapp.com/discover/editDiscover", {      state: {
+    navigate("/discover/editDiscover", {      state: {
         userId: id,
       }})
    }

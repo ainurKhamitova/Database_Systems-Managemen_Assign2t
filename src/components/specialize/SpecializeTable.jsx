@@ -36,7 +36,7 @@ function SpecializeTable(){
    }
 
    function handleEdit(id){
-    navigate("https://assignment2-db.herokuapp.com/specialize/editSpecialize", {      state: {
+    navigate("/specialize/editSpecialize", {      state: {
         userId: id,
       }})
    }
