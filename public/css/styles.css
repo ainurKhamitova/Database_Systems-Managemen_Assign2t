@@ -1,0 +1,217 @@
+body {
+  font-family: 'Montserrat, sans-serif';
+  text-align: center;
+}
+
+h1{
+  font-family: 'Montserrat, sans-serif';
+  font-weight: 900;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat, sans-serif';
+  font-weight: 100;
+  color: black;
+}
+
+ul{
+  color: black;
+}
+
+p {
+  color: #8F8F8F;
+  text-align: center;
+}
+
+/* heading */
+.big-heading {
+  font-family: 'Montserrat, sans-serif';
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.heading-col{
+  align-self: center;
+}
+
+.section-heading {
+  line-height: 1.5;
+  font-size: 3rem;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.colored-section {
+  background-color: #FF4C68;
+  color: white;
+  margin: 0;
+  
+}
+
+.white-section {
+  background-color: white;
+  position: relative;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 0rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+}
+
+.navbar-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.container-fluid-nav {
+  background-color: rgb(255, 249, 249);
+
+}
+
+/* Title section */
+.title-img {
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 25%;
+}
+
+.container-fluid {
+  padding: 3% 3%;
+  text-align: center;
+
+}
+
+/* Buttons */
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+/* Features section */
+.icon {
+  color: #EF8172;
+  margin-bottom: 1.5rem;
+  
+
+}
+
+.icon:hover {
+  color: #FF4C68;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  color: black;
+}
+
+#features {
+  position: relative;
+}
+
+.feature-box {
+  padding: 5%;
+  position: relative;
+ 
+
+}
+
+
+
+
+/* CTA section */
+/* Footer section */
+.social-icon {
+  margin: 20px 10px;
+}
+.copyright{
+  color: black;
+}
+@media(max-width: 1028px) {
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    width: 60%;
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
+
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 150%;
+  }
+  }
+  
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+
+  .logoimg {
+    width: 185px;
+  }
+  .loginSection {
+    background-color: #eee;
+  }
+
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #f093fb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+    }
+    
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    .btnAdd{
+      margin-top: 0;
+      margin-bottom: 10px;
+      right: 0;
+      width: 15%;
+      float: left;
+    }
+    
+    
+
+
+  
