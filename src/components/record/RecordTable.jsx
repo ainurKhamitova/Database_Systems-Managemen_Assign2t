@@ -12,7 +12,7 @@ function RecordTable(){
     // Using useEffect for single rendering
     
     useEffect(() => {
-        fetch("/record/data").then((res) =>
+        fetch("https://assignment2-db.herokuapp.com/record/data").then((res) =>
             res.json().then((data) => {
                 console.log("fetched")
                 console.log(data) 
@@ -39,14 +39,14 @@ function RecordTable(){
    }
 
    function handleEdit(id){
-    navigate("/record/editRecord", {      state: {
+    navigate("https://assignment2-db.herokuapp.com/record/editRecord", {      state: {
         userId: id,
       }})
    }
    function handleDelete(id){
 
     console.log(id);
-    fetch('/record/delete/'+id.email+"/"+id.cname+"/"+id.disease_code, {
+    fetch('https://assignment2-db.herokuapp.com/record/delete/'+id.email+"/"+id.cname+"/"+id.disease_code, {
         method: 'DELETE',
         header: {
            'Accept' : 'application/json',

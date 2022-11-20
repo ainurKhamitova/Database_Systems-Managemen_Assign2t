@@ -16,7 +16,7 @@ function EditSpecialize(props){
   useEffect(() => {
       // Using fetch to fetch the api from 
       // flask server it will be redirected to proxy
-      fetch("/specialize/get/"+key.id+"/"+key.email).then((res) =>
+      fetch("https://assignment2-db.herokuapp.com/specialize/get/"+key.id+"/"+key.email).then((res) =>
           res.json().then((data) => {
               // Setting a data from api
               setData(data)
@@ -38,7 +38,7 @@ function EditSpecialize(props){
       body: JSON.stringify(data)
   }
 
-  fetch('/specialize/update/'+key.id+"/"+key.email, requestOptions)
+  fetch('https://assignment2-db.herokuapp.com/specialize/update/'+key.id+"/"+key.email, requestOptions)
       .then(res => res.text())
       .then(text => console.log(text))
       .then(data =>{

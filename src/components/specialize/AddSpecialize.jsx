@@ -23,7 +23,7 @@ function AddSpecialize(){
         body: JSON.stringify(data)
     }
 
-    fetch('/specialize/add', requestOptions)
+    fetch('https://assignment2-db.herokuapp.com/specialize/add', requestOptions)
         .then(res => res.text())
         .then(text => console.log(text))
         .then(data =>{

@@ -23,7 +23,7 @@ function AddDiseaseType(){
         body: JSON.stringify(data)
     }
 
-    fetch('/diseaseType/add', requestOptions)
+    fetch('https://assignment2-db.herokuapp.com/diseaseType/add', requestOptions)
         .then(res => res.text())
         .then(text => console.log(text))
         .then(data =>{

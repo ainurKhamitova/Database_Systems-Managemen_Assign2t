@@ -23,7 +23,7 @@ function AddDoctor(){
         body: JSON.stringify(data)
     }
 
-    fetch('/doctor/add', requestOptions)
+    fetch('https://assignment2-db.herokuapp.com/doctor/add', requestOptions)
         .then(res => res.text())
         .then(text => console.log(text))
         .then(data =>{

@@ -27,7 +27,7 @@ function AddRecord(){
         body: JSON.stringify(data)
     }
 
-    fetch('/record/add', requestOptions)
+    fetch('https://assignment2-db.herokuapp.com/record/add', requestOptions)
         .then(res => res.text())
         .then(text => console.log(text))
         .then(data =>{

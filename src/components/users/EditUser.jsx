@@ -15,7 +15,7 @@ function EditUser(props){
   useEffect(() => {
       // Using fetch to fetch the api from 
       // flask server it will be redirected to proxy
-      fetch("/user/get/"+id).then((res) =>
+      fetch("https://assignment2-db.herokuapp.com/user/get/"+id).then((res) =>
           res.json().then((data) => {
               // Setting a data from api
               setData(data)
@@ -41,7 +41,7 @@ function EditUser(props){
       .then(res => res.text())
       .then(text => console.log(text))
       .then(data =>{
-          navigate("/user")
+          navigate("https://assignment2-db.herokuapp.com/user")
       }).catch(err => console.log(err))
 
     }

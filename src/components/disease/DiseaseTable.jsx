@@ -12,7 +12,7 @@ function DiseaseTable(){
     // Using useEffect for single rendering
     
     useEffect(() => {
-        fetch("/disease/data").then((res) =>
+        fetch("https://assignment2-db.herokuapp.com/disease/data").then((res) =>
             res.json().then((data) => {
                 console.log("fetched")
                 console.log(data) 
@@ -38,14 +38,14 @@ function DiseaseTable(){
    }
 
    function handleEdit(id){
-    navigate("/disease/editDisease", {      state: {
+    navigate("https://assignment2-db.herokuapp.com/disease/editDisease", {      state: {
         userId: id,
       }})
    }
    function handleDelete(id){
 
     console.log(id);
-    fetch('/disease/delete/'+id, {
+    fetch('https://assignment2-db.herokuapp.com/disease/delete/'+id, {
         method: 'DELETE',
         header: {
            'Accept' : 'application/json',

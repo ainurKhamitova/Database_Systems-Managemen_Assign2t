@@ -28,7 +28,7 @@ function AddUser(){
         body: JSON.stringify(data)
     }
 
-    fetch('/user/add', requestOptions)
+    fetch('https://assignment2-db.herokuapp.com/user/add', requestOptions)
         .then(res => res.text())
         .then(text => console.log(text))
         .then(data =>{

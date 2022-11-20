@@ -15,7 +15,7 @@ function EditDoctor(props){
   useEffect(() => {
       // Using fetch to fetch the api from 
       // flask server it will be redirected to proxy
-      fetch("/doctor/get/"+id).then((res) =>
+      fetch("https://assignment2-db.herokuapp.com/doctor/get/"+id).then((res) =>
           res.json().then((data) => {
               // Setting a data from api
               setData(data)
@@ -37,7 +37,7 @@ function EditDoctor(props){
       body: JSON.stringify(data)
   }
 
-  fetch('/doctor/update/'+id, requestOptions)
+  fetch('https://assignment2-db.herokuapp.com/doctor/update/'+id, requestOptions)
       .then(res => res.text())
       .then(text => console.log(text))
       .then(data =>{

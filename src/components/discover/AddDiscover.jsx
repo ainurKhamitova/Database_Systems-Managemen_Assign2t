@@ -24,7 +24,7 @@ function AddDiscover(){
         body: JSON.stringify(data)
     }
 
-    fetch('/discover/add', requestOptions)
+    fetch('https://assignment2-db.herokuapp.com/discover/add', requestOptions)
         .then(res => res.text())
         .then(text => console.log(text))
         .then(data =>{

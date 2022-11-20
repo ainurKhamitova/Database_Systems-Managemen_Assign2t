@@ -11,7 +11,7 @@ function DiscoverTable(){
     // Using useEffect for single rendering
     
     useEffect(() => {
-        fetch("/discover/data").then((res) =>
+        fetch("https://assignment2-db.herokuapp.com/discover/data").then((res) =>
             res.json().then((data) => {
                 console.log("fetched")
                 console.log(data) 
@@ -37,7 +37,7 @@ function DiscoverTable(){
    }
 
    function handleEdit(id){
-    navigate("/discover/editDiscover", {      state: {
+    navigate("https://assignment2-db.herokuapp.com/discover/editDiscover", {      state: {
         userId: id,
       }})
    }
@@ -45,7 +45,7 @@ function DiscoverTable(){
    function handleDelete(id){
 
     console.log(id);
-    fetch('/discover/delete/'+id.cname+"/"+id.disease_code, {
+    fetch('https://assignment2-db.herokuapp.com/discover/delete/'+id.cname+"/"+id.disease_code, {
         method: 'DELETE',
         header: {
            'Accept' : 'application/json',

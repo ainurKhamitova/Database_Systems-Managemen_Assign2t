@@ -15,7 +15,7 @@ function EditDiscover(props){
   useEffect(() => {
       // Using fetch to fetch the api from 
       // flask server it will be redirected to proxy
-      fetch("/discover/get/"+id.cname+"/"+id.disease_code).then((res) =>
+      fetch("https://assignment2-db.herokuapp.com/discover/get/"+id.cname+"/"+id.disease_code).then((res) =>
           res.json().then((data) => {
               // Setting a data from api
               setData(data)
@@ -37,7 +37,7 @@ function EditDiscover(props){
       body: JSON.stringify(data)
   }
 
-  fetch('/discover/update/'+id.cname+"/"+id.disease_code, requestOptions)
+  fetch('https://assignment2-db.herokuapp.com/discover/update/'+id.cname+"/"+id.disease_code, requestOptions)
       .then(res => res.text())
       .then(text => console.log(text))
       .then(data =>{

@@ -12,7 +12,7 @@ function DoctorTable(){
     // Using useEffect for single rendering
     
     useEffect(() => {
-        fetch("/doctor/data").then((res) =>
+        fetch("https://assignment2-db.herokuapp.com/doctor/data").then((res) =>
             res.json().then((data) => {
                 console.log("fetched")
                 console.log(data) 
@@ -36,14 +36,14 @@ function DoctorTable(){
    }
 
    function handleEdit(id){
-    navigate("/doctor/editDoctor", {      state: {
+    navigate("https://assignment2-db.herokuapp.com/doctor/editDoctor", {      state: {
         userId: id,
       }})
    }
    function handleDelete(id){
 
     console.log(id);
-    fetch('/doctor/delete/'+id, {
+    fetch('https://assignment2-db.herokuapp.com/doctor/delete/'+id, {
         method: 'DELETE',
         header: {
            'Accept' : 'application/json',

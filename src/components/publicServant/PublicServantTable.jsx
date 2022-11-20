@@ -12,7 +12,7 @@ function PublicServantTable(){
     // Using useEffect for single rendering
     
     useEffect(() => {
-        fetch("/publicServant/data").then((res) =>
+        fetch("https://assignment2-db.herokuapp.com/publicServant/data").then((res) =>
             res.json().then((data) => {
                 console.log("fetched")
                 console.log(data) 
@@ -36,14 +36,14 @@ function PublicServantTable(){
    }
 
    function handleEdit(id){
-    navigate("/publicServant/editPublicServant", {      state: {
+    navigate("https://assignment2-db.herokuapp.com/publicServant/editPublicServant", {      state: {
         userId: id,
       }})
    }
    function handleDelete(id){
 
     console.log(id);
-    fetch('/publicServant/delete/'+id, {
+    fetch('https://assignment2-db.herokuapp.com/publicServant/delete/'+id, {
         method: 'DELETE',
         header: {
            'Accept' : 'application/json',

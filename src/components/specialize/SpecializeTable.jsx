@@ -12,7 +12,7 @@ function SpecializeTable(){
     // Using useEffect for single rendering
     
     useEffect(() => {
-        fetch("/specialize/data").then((res) =>
+        fetch("https://assignment2-db.herokuapp.com/specialize/data").then((res) =>
             res.json().then((data) => {
                 console.log("fetched")
                 console.log(data) 
@@ -36,14 +36,14 @@ function SpecializeTable(){
    }
 
    function handleEdit(id){
-    navigate("/specialize/editSpecialize", {      state: {
+    navigate("https://assignment2-db.herokuapp.com/specialize/editSpecialize", {      state: {
         userId: id,
       }})
    }
    function handleDelete(key){
 
     console.log(key);
-    fetch('/specialize/delete/'+key.id+"/"+key.email, {
+    fetch('https://assignment2-db.herokuapp.com/specialize/delete/'+key.id+"/"+key.email, {
         method: 'DELETE',
         header: {
            'Accept' : 'application/json',

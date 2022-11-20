@@ -37,7 +37,7 @@ function EditDiseaseType(props){
       body: JSON.stringify(data)
   }
 
-  fetch('/diseaseType//update/'+id, requestOptions)
+  fetch('https://assignment2-db.herokuapp.com/diseaseType//update/'+id, requestOptions)
       .then(res => res.text())
       .then(text => console.log(text))
       .then(data =>{

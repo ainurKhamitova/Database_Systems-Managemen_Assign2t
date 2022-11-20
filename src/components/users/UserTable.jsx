@@ -12,7 +12,7 @@ function UserTable(){
     // Using useEffect for single rendering
     
     useEffect(() => {
-        fetch("/user/data").then((res) =>
+        fetch("https://assignment2-db.herokuapp.com/user/data").then((res) =>
             res.json().then((data) => {
                 console.log("fetched")
                 console.log(data) 
@@ -40,7 +40,7 @@ function UserTable(){
    }
 
    function handleEdit(id){
-    navigate("/user/editUser", {      state: {
+    navigate("https://assignment2-db.herokuapp.com/user/editUser", {      state: {
         userId: id,
       }})
    }
