@@ -23,7 +23,7 @@ function AddPublicServant(){
         body: JSON.stringify(data)
     }
 
-    fetch('/publicServant/add', requestOptions)
+    fetch('https://assignment2-db.herokuapp.com/publicServant/add', requestOptions)
         .then(res => res.text())
         .then(text => console.log(text))
         .then(data =>{
