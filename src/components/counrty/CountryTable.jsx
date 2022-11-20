@@ -12,7 +12,7 @@ function CountryTable(){
     // Using useEffect for single rendering
     
     useEffect(() => {
-        fetch("/country/data").then((res) =>
+        fetch("htps://assignment2-db.herokuapp.com/country/data").then((res) =>
             res.json().then((data) => {
                 console.log("fetched")
                 console.log(data) 
