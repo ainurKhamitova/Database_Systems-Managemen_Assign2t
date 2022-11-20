@@ -59,7 +59,7 @@ const Home = () => {
 </section>
       <footer className="coloured-section"id="footer">
       <div className="container-fluid">
-        <p className="copyright">© Ainur Khamtova</p>
+        <p className="copyright">© Ainur Khamitova</p>
       </div>
     </footer>
     </div>
